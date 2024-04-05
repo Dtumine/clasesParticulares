@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Detalles del producto</h1>
+    <p><strong>Nombre: </strong><span id="nombreProducto"></span></p>
+    <p><strong>Precio: </strong><span id="precioProducto"></span> </p>
+    <p><strong>Cantidad Disponible: </strong><span id="cantidadDisponibleProducto"></span> </p>
+    <p><strong>Categoria: </strong><span id="categoriaProducto"></span> </p>
+
+    <button onclick="mostrarDetalles()">Mostrar Detalles</button>
+
+    <form id="formActualizarStock">
+        <label for="ingresoStock">Ingresar el Stock: </label>
+        <input type="number" id="ingresoStock" name="ingresoStock" min="1">
+        <button type="submit">Actualizar Stock</button>
+    </form>
+    <script>
+        let producto = {
+            nombre: "riñonera", 
+            precio: 19000,
+            cantidadDisponible: 46,
+            categoria: "accesorios",
+
+            mostrarDetalles: function(){
+                document.getElementById("nombreProducto").textContent = this.nombre;
+                document.getElementById("precioProducto").textContent = this.precio;
+                document.getElementById("cantidadDisponibleProducto").textContent = this.cantidadDisponible;
+                document.getElementById("categoriaProducto").textContent = this.categoria;
+            },
+
+            actualizarStock: function(ingresoRiñonera){
+                this.cantidadDisponible += ingresoRiñonera;
+                this.mostrarDetalles();
+            } 
+        };
+        
+        function mostrarDetalles()
+        {
+            producto.mostrarDetalles();
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("formActualizarStock").addEventListener("submit", function(event) {
+                event.preventDefault();
+                let cantidadIngresadaPorElUsuario = parseInt(document.getElementById("ingresoStock").value);
+                producto.actualizarStock(cantidadIngresadaPorElUsuario);
+            });
+        });
+    </script>
+</body>
+</html>
