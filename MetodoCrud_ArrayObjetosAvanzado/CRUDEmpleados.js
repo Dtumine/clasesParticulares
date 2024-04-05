@@ -93,7 +93,7 @@ do {
       break;
     case "5":
         mostrarPromedioSalarios()
-        break;6
+        break;
     case "6":
       1;
       condition = false;
