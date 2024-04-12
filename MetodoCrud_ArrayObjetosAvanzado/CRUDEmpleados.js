@@ -1,8 +1,9 @@
 let personas = [];
 
-function cargarPersonaEnLista(nuevaPersona) {
+function cargarPersonaEnLista(nuevaPersona) { 
   personas.push(nuevaPersona);
 }
+
 function mostrarLasPersonasEnLista() {
   for (i = 0; i < personas.length; i++) {
     let persona = personas[i];
@@ -43,19 +44,25 @@ function actualizarPersonaDeLista(indice, opcion) {
 
     default:
       alert("valor incorrcto");
-  }
+  } 
 }
+
+
 function mostrarPromedioSalarios()
 {
     let sumaTodosSalarios = 0
-    for (i = 0; i < personas.length; i++) 
+    for (i = 0; i < personas.length; i++)  
     {
         sumaTodosSalarios+=personas[i].salario
     }
     promedioSalarios = sumaTodosSalarios/personas.length
     alert("El promedio de los salarios es: $"+promedioSalarios)
 }
-condition = true;
+
+condition = true;  
+
+
+
 do {
   let menuIngreso = prompt(
     "1-Agregar Persona \n 2-Leer \n 3-Actualizar \n 4-Eliminar \n 5-Promedio Salarios\n 6-Salir \n"
@@ -95,7 +102,7 @@ do {
         mostrarPromedioSalarios()
         break;
     case "6":
-      1;
+      ;  
       condition = false;
       break;
   }

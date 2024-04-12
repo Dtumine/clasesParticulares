@@ -224,7 +224,7 @@ function reelevamientoDeDatos(){
             default: 
                 break;
         } 
-    } else {alert("fin del programa")} 
+    } else {alert("fin del programa")}     
 }  
 
 
