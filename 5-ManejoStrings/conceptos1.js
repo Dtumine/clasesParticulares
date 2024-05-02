@@ -1,7 +1,9 @@
+/*
+
 let frase = "Hola, mundo!"
 
 console.log(frase.length)  
-
+ 
 console.log(frase.charAt(0))
 
 
@@ -28,7 +30,7 @@ console.log(datosConcatenados.slice(-15))
 
 let tipoEmpleado = "Contador"
 
-console.log(tipoEmpleado.toLowerCase())
+console.log(tipoEmpleado.toLowerCase()) 
 console.log(tipoEmpleado.toUpperCase())
 
 
@@ -55,6 +57,24 @@ let telefonoRellenar = telefono.padStart(20,"-")
 let telefonoRellenar2 = telefono.padEnd(20," ")
 console.log(telefonoRellenar)
 console.log(telefonoRellenar2)
+
+*/ 
+
+
+let contrasena = "holanube"
+if(contrasena.length<14){
+    console.log("la contraseña debe contener más de 14 carácteres")
+}
+
+console.log(contrasena.charAt(2))
+
+let contrasena2 = "lahoradelasflores" 
+let concatenacion = contrasena.concat(contrasena2)
+console.log(concatenacion)
+
+
+
+
 
 
 
