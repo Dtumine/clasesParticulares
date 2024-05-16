@@ -5,6 +5,7 @@ let frutas = ["manzana", "anana", "limon"];
 // implementar la funcion de agregar, y agregar 3 frutas
 // implementar la funcion eliminar y eliminar 1 fruta
 // implementar la funcion actualizar y actualizar 2 frutas 
+  
 
 function mostrarDetalles(){
     console.log("-----LISTA FRUTAS-------")

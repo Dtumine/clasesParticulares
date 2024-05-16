@@ -1,0 +1,6 @@
+1 - Se neceitan tomar los datos de los proximos clientes de la empresa:
+Los datos son: Nombre (nombre de la empresa -> cliente), la direccion juridica, el presupuesto en Pesos($$)
+ un numero de telefonono de contacto, una fecha de fin de proyecto y una direccion de correo. 
+
+
+  

@@ -5,7 +5,7 @@ class Jugador
         this.nombre = nombre;
         this.puesto = puesto;
         this.numero = numero;
-        this.precio = 800000;
+        this.precio = 800000;   
     }  
 
     mostrarInfo()

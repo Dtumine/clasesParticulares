@@ -1,7 +1,7 @@
 
 
 class Libros{
-    constructor(titulo,precio,stock){
+    constructor(titulo,precio,stock){   
         this.titulo = titulo
         this.precio = precio                     // CONSTRUCTOR DE OBJETO LIBRO
         this.stock = stock
@@ -17,6 +17,6 @@ class Libros{
         this.precio = nuevoPrecio
     } 
 
-} 
+}    
 
 export default Libros;

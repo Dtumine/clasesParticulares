@@ -8,7 +8,7 @@ class Equipo
     }
 
     agregarJugador(jugador)
-    {
+    {  
         this.jugadores.push(jugador)
     }
 

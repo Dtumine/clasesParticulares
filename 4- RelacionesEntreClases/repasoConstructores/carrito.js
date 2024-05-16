@@ -2,9 +2,9 @@
 
 
 class Carrito{
-    constructor(){
-        this.carrito = []
-    }
+    constructor(){  
+        this.carrito = []   
+    }  
                                   
     agregarCompra(libro){                               //CONSTRUCTOR DE ARRAY DE CARRITOS DE COMPRA 
         this.carrito.push(libro)

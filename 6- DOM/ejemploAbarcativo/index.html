@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #e9ecef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .input-group {
+    margin-bottom: 20px;
+  }
+  .input-group label {
+    font-size: 14px;
+    color: #495057;
+    display: block;
+    margin-bottom: 5px;
+  }
+  .input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  .input-group input.error {
+    border-color: #dc3545;
+  }
+  .error-message {
+    color: #dc3545;
+    font-size: 12px;
+    display: none;
+  }
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+
+      </style>
+</head>
+<body>  
+    <form id="registrationForm">
+        <div class="input-group">
+          <label for="firstName">Nombre:</label>
+          <input type="text" id="firstName" class="input-field" required>
+          <div class="error-message">Este campo es requerido</div>
+        </div>
+        <div class="input-group">
+          <label for="lastName">Apellido:</label>
+          <input type="text" id="lastName" class="input-field" required>
+          <div class="error-message">Este campo es requerido</div>
+        </div>
+        <div class="input-group">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" class="input-field" required>
+          <div class="error-message">Por favor, ingresa un correo válido</div>
+        </div>
+        <div class="input-group">
+          <label for="city">Ciudad:</label>
+          <input type="text" id="city" class="input-field" required>
+          <div class="error-message">Este campo es requerido</div>
+        </div>
+        <button type="button" onclick="submitForm()">Registrar</button>
+      </form>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

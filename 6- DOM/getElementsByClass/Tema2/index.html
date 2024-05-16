@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo getElementsByClassName</title>
+    <style>
+        .destacado {
+            color: red;
+            font-weight: bold;  
+        }
+
+        .resaltado {
+            background-color: aqua;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="item">Elemento 1</li>
+        <li class="item destacado">Elemento 2</li>
+        <li class="item">Elemento 3</li>
+        <li class="item destacado">Elemento 4</li>
+    </ul>
+
+    <button onclick="destacarElementos()">Destacar Elementos</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
