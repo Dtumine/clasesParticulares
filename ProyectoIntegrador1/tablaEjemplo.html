@@ -6,24 +6,24 @@
     <title>Document</title>
     <style>
         table {
-          width: 100%;
+          width: 100%;    
           border-collapse: collapse;
         }
         th {
-          border: 1px solid #012572; 
+          border: 1px solid #5fc4d1; 
           padding: 8px;
           text-align: center;
           background-color: #45689c;
         }
-        td{
+        td{  
           background-color:rgb(27, 48, 78)a;
           border: 2px solid #000000;
           padding: 8px;
           text-align: center;
         } 
 
-        table{
-          margin-top: 30px;
+        table{   
+          margin-top: 30px;  
         }
 
         button{
@@ -37,7 +37,7 @@
         } 
 
       </style>
-</head>
+</head> 
 <body>
      
       <form action="" id="formulario">
@@ -50,11 +50,12 @@
        <label for="presupuesto">Total Presupuesto:</label><br>
        <input type="text" id="presupuesto" class="campo" required><br>
        <label for="email">Email: </label><br>
-       <input type="email" class="campo" required><br>
+       <input type="email" id="email" class="campo" required><br>
        <label for="fechaFin">Fecha de Finalización: </label><br>
        <input type="date" max="2024-12-31" id="fechaFin" class="campo" required><br> 
 
        <button type="button" onclick="enviarFormulario()">Enviar</button>
+      
 
 
       </form>  
@@ -72,32 +73,13 @@
             <th>Finalización</th>
           </tr>
         </thead>
-        <tbody>  <!-- cuerpo de tabla --> 
-          <tr><!-- Table row -> una fila-->
-            <td>Dato 1-1</td> <!-- Table data -->
-            <td>Dato 1-2</td>
-            <td>Dato 1-3</td>
-            <td>Dato 1-4</td>
-            <td>Dato 1-5</td>
-            <td>Dato 1-6</td>
-          </tr>
-          <tr>
-            <td>Dato 2-1</td>
-            <td>Dato 2-2</td>
-            <td>Dato 2-3</td>
-            <td>Dato 2-4</td>
-            <td>Dato 2-5</td>
-            <td>Dato 2-6</td>
-          </tr>
-          <tr>
-            <td>Dato 3-1</td>
-            <td>Dato 3-2</td>
-            <td>Dato 3-3</td>
-            <td>Dato 3-4</td>
-            <td>Dato 3-5</td>
-            <td>Dato 3-6</td>
-          </tr>
+        <tbody id="tablaEmpresas">  
+          
         </tbody>
+        <h1>El presupueso total es: $</h1>
+        <h2 id="presupuestotal"> - </h2>
+        <h1>El total de los clientes es: </h1>
+        <h2 id="clientesEnTotal"> 0 </h2>
       </table>
 
 

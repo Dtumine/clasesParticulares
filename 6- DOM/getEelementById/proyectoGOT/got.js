@@ -1,38 +1,38 @@
-let personajes = [];
+let contable = [];
  
-class Personaje{
-    constructor(nombre,casa,locacion,profesion){
-        this.nombre = nombre
-        this.casa = casa
-        this.locacion = locacion 
-        this.profesion = profesion
-    }
-} 
+class ObjetoContable{
+    constructor(concepto,cantidad,dia,mes){
+        this.concepto = concepto
+        this.cantidad = cantidad
+        this.dia = dia 
+        this.mes = mes
+    }  
+}       
 
-function crearObjetoPersonaje(){ 
+function crearObjeto(){ 
 
-    let nombrePersonaje = document.getElementById('nombre').value
-    let casaPersonaje = document.getElementById('casa').value
-    let locacionPersonaje = document.getElementById('locacion').value
-    let profesionPersonaje = document.getElementById('profesion').value
+    let conceptoForm = document.getElementById('concepto').value
+    let cantidadForm = document.getElementById('cantidad').value
+    let diaForm = document.getElementById('dia').value
+    let mesForm = document.getElementById('mes').value
 
 
-    let personajeObjeto = new Personaje(nombrePersonaje,casaPersonaje,locacionPersonaje,profesionPersonaje)
+    let nuevoIngreso = new ObjetoContable(conceptoForm,cantidadForm,diaForm,mesForm)
     
-    personajes.push(personajeObjeto) 
+    contable.push(nuevoIngreso) 
 
-    document.getElementById('nombre').value = ""
-    document.getElementById('casa').value = ""
-    document.getElementById('locacion').value = ""
-    document.getElementById('profesion').value = "" 
 } 
 
 
 
-function mostrarPersonaje(){ 
+function mostrarObjeto(){ 
     
-    console.log(personajes)
+    console.log(contable)
 }
+
+
+
+/*
 
 function mostrarUltimoPorAlert(){
     alert(" Nombre: " + personajes[personajes.length-1].nombre + "\n Casa: " + personajes[personajes.length-1].casa + "\n Locación: " + personajes[personajes.length-1].locacion + "\n Profesión: " + personajes[personajes.length-1].profesion )
@@ -46,3 +46,6 @@ function mostrarPorAlert(){
     }
 
 }
+
+
+*/ 

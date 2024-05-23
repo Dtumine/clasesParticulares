@@ -21,7 +21,7 @@
 
     for (let i = 0; i < fields.length; i++) {
       if (!fields[i].value.trim()) {
-        fields[i].classList.add('error');
+        fields[i].classList.add('error');  
         errorMessages[i].style.display = 'block';
         valid = false;
       } else {
