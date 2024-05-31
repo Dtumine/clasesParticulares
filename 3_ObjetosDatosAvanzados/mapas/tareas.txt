@@ -1,0 +1,17 @@
+Enunciado 1: Registro de Estudiantes y sus Calificaciones
+Crea un Map para almacenar las calificaciones de los estudiantes.
+ Las claves del mapa serán los nombres de los estudiantes y los valores serán sus calificaciones. 
+ Implementa funciones para añadir nuevas calificaciones, 
+ obtener la calificación de un estudiante específico y mostrar todas las calificaciones.
+
+Enunciado 2: Inventario de Productos
+Crea un Map para gestionar el inventario de una tienda. 
+Las claves del mapa serán los nombres de los productos y los valores serán la cantidad en stock. 
+Implementa funciones para añadir productos al inventario,
+ actualizar la cantidad de un producto y mostrar el inventario completo.
+
+Enunciado 3: Agenda Telefónica
+Crea un Map para almacenar números de teléfono. 
+Las claves del mapa serán los nombres de las personas y los valores serán sus números de teléfono. 
+Implementa funciones para añadir un nuevo contacto, 
+obtener el número de teléfono de un contacto específico y listar todos los contactos con sus números de teléfono.

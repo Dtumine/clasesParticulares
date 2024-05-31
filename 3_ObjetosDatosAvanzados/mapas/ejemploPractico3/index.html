@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traductor de Frases</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #translation-output {
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: blue;
+    }
+    #add-word-form {
+      display: none;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Traductor de Frases</h1>
+  <input type="text" id="input-phrase" placeholder="Escribe una frase en inglés">
+  <button onclick="translatePhrase()">Traducir</button>
+  <div id="translation-output"></div>
+  <div id="add-word-form">
+    <h2>Añadir nueva palabra</h2>
+    <input type="text" id="new-english-word" placeholder="Palabra en inglés">
+    <input type="text" id="new-spanish-word" placeholder="Traducción en español">
+    <button onclick="addNewWord()">Añadir</button>
+  </div>
+  <script src="translator.js"></script>
+</body>
+</html>

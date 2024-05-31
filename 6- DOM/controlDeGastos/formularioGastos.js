@@ -3,7 +3,7 @@ let arrayContable = [];   // ARRAY
 let arrayIngresos = [];
 let arrayEgresos = []; 
 
-
+    
 class ConstructorContable{               // CONSTRUCTOR
     constructor(concepto,cantidad,dia,numero,mes,año,categoria){
         this.concepto = concepto
