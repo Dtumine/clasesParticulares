@@ -1,0 +1,175 @@
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3rem; 
+    color: #57dfb7; 
+    background-color: black;
+}
+
+.grilla{
+    width: 90%; 
+    height: 38rem;
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(8, 1fr); 
+    border: 2px solid black;
+    margin: auto;
+    color: #57dfb7;
+} 
+
+.cont-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem;
+    grid-column: 1/5;
+    grid-row: 1/2;
+    background-color: rgb(74, 120, 248);
+    border: 2px solid white;
+    border-color: white; 
+    border-radius: 1.3rem;
+    font-size: 2rem;
+    color: #57dfb7; 
+    background-color: black;
+    
+} 
+
+.logo{
+    display: flex; 
+    align-items: center; 
+    height: 5.5rem;
+}
+
+.logo img{
+    border-radius: 0.7rem;
+    height: 2.5rem;
+    
+} 
+
+.nombre-empresa{ 
+    font-size: 2.2rem;
+    margin-left: 0.6rem;
+    font-weight: 900;
+
+}
+
+nav a{
+   font-size: 1.7rem;
+   font-weight: 600;
+   padding-right: 0.7rem;
+}
+
+nav a:hover{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: #57dfb7;
+} 
+
+h1{
+    color: #57dfb7;
+}
+
+.cont-main{ 
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    height: 29rem;
+    grid-column: 1/5;
+    grid-row: 2/8;
+    border-radius: 0.7rem;
+    background-color: #191919;
+    margin-top: 0.5rem;
+
+}
+
+
+.cont-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/5;
+    grid-row: 8/9;
+    background-color: whitesmoke; 
+    border-radius: 1.3rem; 
+    height: 3.5rem; 
+    margin-top: 0.5rem;
+    
+}  
+
+select{
+    border-radius: 0.5rem;
+    height: 1.3rem;
+
+}
+
+select option{
+font-family: "Poppins", sans-serif;   
+} 
+
+input, label{
+    margin: auto;
+}
+
+input{
+    height: 1.3rem;
+    border-radius: 0.5rem;
+} 
+
+button{ 
+    font-family: "Poppins", sans-serif;
+    width: 50%; 
+    height: 11%;
+    background-color: #57dfb7; 
+    margin-top: 0.4rem;
+    padding: o.3rem;
+    border: 2px solid black;
+    border-radius: 1rem; 
+    cursor: pointer;
+
+}
+
+.info-footer{ 
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.formularioCompra{ 
+    background-color: #2e2d2d;
+    border-radius: 10px;
+    width: 18rem;
+    height: 27.5rem; 
+    margin-left: 0.7rem;
+    margin-top: 0.5rem; 
+    text-align: center;
+    
+} 
+
+.contenedor-shows{ 
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    width: 50rem;
+}
+
+.contenedor-divididos img{   
+    width: 12rem; 
+    height: 15rem;
+} 
+
+.contenedor-delioValdez img{  
+    width: 12rem; 
+    height: 15rem;
+} 
+
+.contenedor-theBeats img{  
+    width: 12rem; 
+    height: 15rem;
+}
+
+
+
+

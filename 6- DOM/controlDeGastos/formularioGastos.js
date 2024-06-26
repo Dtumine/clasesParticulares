@@ -1,22 +1,22 @@
 
 let arrayContable = [];   // ARRAY
-let arrayIngresos = [];
-let arrayEgresos = []; 
+let arrayIngresos = []; 
+let arrayEgresos = [];  
 
-
+    
 class ConstructorContable{               // CONSTRUCTOR
     constructor(concepto,cantidad,dia,numero,mes,año,categoria){
         this.concepto = concepto
-        this.cantidad = cantidad
+        this.cantidad = cantidad  
         this.dia = dia
-        this.numero = numero
+        this.numero = numero  
         this.mes = mes
         this.año = año
         this.categoria = categoria
 
     }
 } 
-
+ 
 
 function crearObjeto(){                       // CREAR OBJETO 
 
@@ -53,7 +53,7 @@ function enviar(){
     } 
 
 
-
+  
     for(let i=0; i<inputs.length; i++)          // CONDICION ESPACIO VACÍOS
         {
         if(inputs[i].value.trim() === "")
@@ -115,7 +115,7 @@ function enviar(){
         } 
     } 
 
-
+  
 
 
 

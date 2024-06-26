@@ -1,0 +1,38 @@
+
+{% extends "base.html"%}
+{% block content %}
+
+<form action="" class="formularioCompra">
+    <label for="" id="nombreYApellido">Nombre y Apellido</label><br>
+    <input type="text" placeholder="Nombre y Apellido" id="nombreYApellido"><br>
+    <label for="email" id="email">Email</label><br>
+    <input type="text" placeholder="Email" id="email"><br> 
+    <label for="">Shows Disponibles</label><br>
+    <select name="" id="showsDisponibles">
+        <option value="divididos">DIVIDIDOS</option>
+        <option value="laDelioValdez">LA DELIO VALDEZ</option>
+        <option value="theBeats">THE BEATS</option>
+    </select><br> 
+    <label for="">Ubicación y Precio</label><br> 
+    <select name="" id="ubicacionYPrecio">
+    <option value="campo">Campo - $40000</option>
+    <option value="campoVip">Campo VIP - $55000</option>
+    <option value="plateaAlta">Platea Alta - $50000</option>
+    <option value="plateaBaja">Platea Baja - $60000</option>
+    <option value="plateaVip">Platea VIP - $80000</option>
+    </select><br> 
+    <label for="">Medio de Pago</label><br>
+    <select name="" id="medioDePago">
+        <option value="visa">VISA</option>
+        <option value="visaDebito">VISA DEBITO</option>
+        <option value="americanExpress">AMERICAN EXPRESS</option>
+        <option value="mastercard">MASTERCARD</option> 
+        <option value="mercadoPago">MERCADO PAGO</option>
+    </select><br> 
+    <label for="" id="numeroTarjeta">Nº de Tarjeta</label>
+    <input type="password" id="numeroTarjeta" placeholder="1234 5678 XXXX">
+    <button type="button" onclick="imprimirTicket()">COMPRAR</button><br>
+</form>
+{% endblock %}
+    
+  

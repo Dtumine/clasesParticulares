@@ -1,0 +1,26 @@
+Implementa una clase Usuario que permita crear instancias de usuarios con un nombre de usuario y una contraseña,
+ y una clase Perfil que permita crear instancias de perfiles con información detallada del usuario como el nombre
+  completo, la dirección de correo electrónico y la fecha de nacimiento. Además, la clase Usuario debe incluir
+   un método para asignar un perfil a un usuario.
+
+Clase Usuario:   
+
+Constructor que acepte los parámetros nombreUsuario y contraseña.
+Propiedad perfil inicializada en null.
+Método asignarPerfil que acepte un objeto Perfil y lo asigne a la propiedad perfil del usuario.
+Clase Perfil:
+
+Constructor que acepte los parámetros nombreCompleto, email, y fechaNacimiento.
+Crea dos instancias de Usuario con los siguientes datos:
+
+Usuario 1: Nombre de usuario "jperez", Contraseña "1234".
+Usuario 2: Nombre de usuario "rmartinez", Contraseña "5678".
+Crea dos instancias de Perfil con los siguientes datos:
+
+Perfil 1: Nombre completo "Juan Perez", Email "juan.perez@example.com", Fecha de nacimiento "1980-05-15".
+Perfil 2: Nombre completo "Rodrigo Martinez", Email "rodrigo.martinez@example.com", Fecha de nacimiento "1975-08-20".
+Asigna el Perfil 1 al Usuario 1 utilizando el método asignarPerfil.
+Asigna el Perfil 2 al Usuario 2 utilizando el método asignarPerfil.
+
+Imprime en la consola el nombre de usuario del Usuario 1 y los detalles de su perfil.
+Imprime en la consola el nombre de usuario del Usuario 2 y los detalles de su perfil.

@@ -1,5 +1,5 @@
 
-    
+      
 function enviarFormulario(){
 
     let elementos = document.getElementsByClassName("campo")  // PARA TODOS LOS CAMPOS

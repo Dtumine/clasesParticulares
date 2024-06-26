@@ -1,0 +1,85 @@
+
+body{
+    font-family: sans-serif;
+}
+
+.grilla{
+    width: 90%;
+    height: 600px;
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(8, 1fr); 
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 50px; 
+} 
+
+.cont-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    grid-column: 1/5;
+    grid-row: 1/2;
+    background-color: rgb(74, 120, 248);
+    border-bottom: 2px solid black;
+    
+    
+} 
+
+.logo{
+    display: flex; 
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    
+} 
+
+.nombre-empresa{
+    font-weight: 900;
+
+}
+
+nav a{
+   font-weight: 600;
+   padding-right: 10px;
+}
+
+nav a:hover{
+    color: blue;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+} 
+
+.cont-main{
+    grid-column: 1/5;
+    grid-row: 2/8;
+    background-color: whitesmoke;
+
+}
+
+
+
+.cont-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/5;
+    grid-row: 8/9;
+    background-color: whitesmoke; 
+    border-top: 2px solid black;
+    
+} 
+
+.info-footer{
+  
+    font-size: 18px;
+    font-weight: 600;
+}
+
