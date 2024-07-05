@@ -2,7 +2,7 @@ let tickets =  [];
 
 
 class Ticket{
-    constructor(nombreYApellido,email,show,total){
+    constructor(nombreYApellido,email,show,total){ 
    
     this.nombreYApellido = nombreYApellido
     this.email = email 

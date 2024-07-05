@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Document</title>
+</head>
+<body>  
+    <div class="grilla">
+    <header class="cont-header"> 
+        <div class="logo">
+           <a href="index.html"> <img src="images/ticket.jpg" alt="logo"></a>
+           <h2 class="nombre-empresa">Green Tickets</h2>
+        </div> 
+        <nav class="cont-nav">
+            <a href="index.html" class="nav-link">Home</a></li>
+            <a href="buy.html" class="nav-link">Buy</a></li>
+            <a href="tickets.html" class="nav-link">Tickets</a></li>
+        </nav>
+
+    </header>  
+
+
+
+    <main class="main-buy"> 
+
+        <form action="" class="formularioCompra">
+            <label for="nombreYApellido" >Nombre y Apellido</label><br>
+            <input type="text" placeholder="Nombre y Apellido" id="nombreYApellido" class="campo" required><br>
+            <label for="email">Email</label><br>
+            <input type="text" placeholder="Email" id="email" class="campo" required><br> 
+            <label for="show">Shows Disponibles</label><br>
+            <select name="" id="show" class="campo">
+                <option value="divididos">DIVIDIDOS</option>
+                <option value="laDelioValdez">LA DELIO VALDEZ</option>
+                <option value="theBeats">THE BEATS</option>
+            </select><br> 
+            <label for="ubicacionYPrecio">Ubicación y Precio</label><br>  
+            <select name="" id="ubicacionYPrecio" class="campo">
+            <option value="campo-$40000">Campo - $40000</option>
+            <option value="campoVip-$55000">Campo VIP - $55000</option>
+            <option value="plateaAlta-$50000">Platea Alta - $50000</option>
+            <option value="plateaBaja-$60000">Platea Baja - $60000</option>
+            <option value="plateaVip-$80000">Platea VIP - $80000</option>
+            </select><br> 
+            <label for="medioDePago">Medio de Pago</label><br>
+            <select name="" id="medioDePago" class="campo">
+                <option value="VISA">VISA</option>
+                <option value="VISA-DEBITO">VISA DEBITO</option>
+                <option value="AMERICAN EXPRESS">AMERICAN EXPRESS</option>
+                <option value="MASTERCARD">MASTERCARD</option> 
+                <option value="MERCADO PAGO">MERCADO PAGO</option>
+            </select><br> 
+            <label for="numeroTarjeta">Nº de Tarjeta</label>
+            <input type="password" id="numeroTarjeta" placeholder="1234 5678 XXXX" class="campo" required>
+            <button type="button" onclick="enviar()">COMPRAR</button><br> 
+        </form>  
+     
+        
+            <table>
+                <thead>
+                    <th>Nombre y Apellido</th>
+                    <th>Email</th>
+                    <th>Show</th>
+                    <th>Ubicación</th>
+                    <th>Medio de Pago</th> 
+                </thead> 
+                <tbody id="tablaTickets"> 
+                    
+                </tbody>
+            </table> 
+    
+        
+
+    </main>  
+
+    
+   
+    
+
+
+    <footer class="cont-footer">
+        <h2 class="info-footer">@bluetickets.com</h2> 
+    </footer> 
+    
+
+</div>
+    <script src="boleteria.js"></script>
+</body>
+</html>
