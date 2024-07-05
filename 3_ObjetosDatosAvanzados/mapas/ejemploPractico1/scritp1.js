@@ -12,7 +12,11 @@ console.log(userRoles.get('editor')); // 'Content Editor'
 console.log(userRoles.has('viewer')); // true
 
 // Iterar sobre el mapa
+<<<<<<< HEAD
 userRoles.forEach((value, key) => {  
+=======
+userRoles.forEach((value, key) => {
+>>>>>>> a01159d8c498baa4f28bbc8450b885c4f7a5a0a0
   console.log(`${key}: ${value}`);
 });
 

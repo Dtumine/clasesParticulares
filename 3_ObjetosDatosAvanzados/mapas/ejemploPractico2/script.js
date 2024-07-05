@@ -6,7 +6,11 @@ translator.set('hello', 'hola');
 translator.set('world', 'mundo');
 translator.set('cat', 'gato');
 translator.set('dog', 'perro');
+<<<<<<< HEAD
 translator.set('house', 'casa');     
+=======
+translator.set('house', 'casa');
+>>>>>>> a01159d8c498baa4f28bbc8450b885c4f7a5a0a0
 translator.set('food', 'comida');
 
 // Función para traducir una palabra utilizando el mapa

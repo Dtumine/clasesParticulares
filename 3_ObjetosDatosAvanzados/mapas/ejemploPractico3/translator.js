@@ -2,12 +2,21 @@
 let translator = new Map([
     ['hello', 'hola'],
     ['world', 'mundo'],
+<<<<<<< HEAD
     ['cat', 'gato'],   
     ['dog', 'perro'], 
     ['house', 'casa'],  
     ['food', 'comida']
   ]);
     
+=======
+    ['cat', 'gato'],
+    ['dog', 'perro'],
+    ['house', 'casa'],
+    ['food', 'comida']
+  ]);
+  
+>>>>>>> a01159d8c498baa4f28bbc8450b885c4f7a5a0a0
   // Función para traducir una palabra utilizando el mapa
   function translate(word) {
     return translator.get(word.toLowerCase()) || null;
@@ -34,7 +43,11 @@ let translator = new Map([
     document.getElementById('translation-output').textContent = translation.trim();
   
     if (missingWords.length > 0) {
+<<<<<<< HEAD
       showAddWordForm(missingWords[0]);      
+=======
+      showAddWordForm(missingWords[0]);
+>>>>>>> a01159d8c498baa4f28bbc8450b885c4f7a5a0a0
     }
   }
   

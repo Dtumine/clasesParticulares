@@ -12,10 +12,16 @@ class Alumno{
     } 
 
     asignarRegistroDeSalud(registro){
+<<<<<<< HEAD
         this.registroSalud = registro  
     }
 } 
 
+=======
+        this.registroSalud = registro
+    }
+}
+>>>>>>> a01159d8c498baa4f28bbc8450b885c4f7a5a0a0
 
 
 

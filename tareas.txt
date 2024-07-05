@@ -1,0 +1,11 @@
+A partir de los ejemplos que vimos de las relaciones de cardinalidad 1:1 hacer lo mismo para 
+ Alumno - RegistroSalud
+
+Los atributos de alumno y registro de salud se podran elegir.
+
+Crear un html de dos formularios, donde se pueda crear un alumno y un registro de salud. 
+Lo importante es que ademas de crearlos se los debe "unir" a traves de un boton que diga, por ejemplo "asignar"
+
+Se puede mostrar por medio de un alert: alumnoX.RegistroSaludX
+
+

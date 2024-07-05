@@ -1,7 +1,12 @@
 
 let arrayContable = [];   // ARRAY
+<<<<<<< HEAD
 let arrayIngresos = []; 
 let arrayEgresos = [];  
+=======
+let arrayIngresos = [];
+let arrayEgresos = []; 
+>>>>>>> a01159d8c498baa4f28bbc8450b885c4f7a5a0a0
 
     
 class ConstructorContable{               // CONSTRUCTOR
