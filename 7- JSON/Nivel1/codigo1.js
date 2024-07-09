@@ -8,7 +8,7 @@ class Persona {
     }
 }
 
-const persona1 = new Persona('Ana', 28, 'Femenino', 'Ingeniera')
+const persona1 = new Persona('Ana', 28, 'Femenino', 'Ingeniera'); 
 const persona2 = new Persona('Luis', 34, 'Masculino', 'Médico');
 const persona3 = new Persona('Carlos', 23, 'Masculino', 'Estudiante');
 const persona4 = new Persona('María', 30, 'Femenino', 'Arquitecta');
