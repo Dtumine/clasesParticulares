@@ -1,31 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}"> 
 
-    <link rel="stylesheet" href="estilos.css">
-    <title>Document</title>
-</head>
-<body>     
 
-    <div class="grilla">
-        <header class="cont-header">    
-            <div class="logo">
-                <a href="{{url_for('home')}}"> <img src="../static/images/ticket.jpg" alt="logo"></a>
-                <h2 class="nombre-empresa">Green Tickets</h2>
-            </div>
-            <nav class="cont-nav">
-                <a href="{{url_for('home')}}">Home</a></li>
-                <a href="{{url_for('comprar_tickets')}}" class="nav-link">Buy</a></li>
-                <a href="{{url_for('ver_ubicaciones')}}" class="nav-link">Tickets</a></li>
-            </nav>
-        </header> 
-    
-     <main class="cont-main">   
- 
-        <div class="contenedor-shows"> 
+        {% extends "base.html"%} 
+
+        {% block content %} 
+
+        <main class="cont-main"> 
+
+          <div class="contenedor-shows"> 
 
           <div class="contenedor-divididos">
           <img src="../static/images/divididos.png" alt=""> 
@@ -39,19 +20,8 @@
             <img src="../static/images/thebeats.png" alt="">
            </div>
         
-        </div> 
+           </div>  
 
-     </main>  
+        </main>
 
-     <footer class="cont-footer">
-        <h2 class="info-footer">@bluetickets.com</h2> 
-     </footer> 
-
-    </div>
-
-
-
-
-    <script src="../static/boleteria.js"></script>
-</body> 
-</html>
+        {% endblock %} 

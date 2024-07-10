@@ -21,4 +21,6 @@ def ver_tickets():
 
 if __name__ == "__main__":
     app.run(host='192.168.100.19', port=5000) # abrimos la cmd y colocamos ipconfig
-    
+     
+
+     
