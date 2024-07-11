@@ -2,7 +2,7 @@ class Persona {
     constructor(nombre, edad, genero, ocupacion) {
         this.nombre = nombre;
         this.edad = edad;
-        this.genero = genero;
+        this.genero = genero; 
         this.ocupacion = ocupacion;
 
     }

@@ -19,7 +19,8 @@ function enviar()
     let elementos = document.getElementsByClassName("campo")  // PARA TODOS LOS CAMPOS 
 
     let nombreCelda = document.getElementById('nombreYApellido') 
-    let emailCelda = document.getElementById('email')
+    let emailCelda = document.getElementById('email') 
+    let tarjetaCelda = document.getElementById('numeroTarjeta')
     
     for(i=0; i<elementos.length;i++){
         elementos[i].classList.remove("error")   
@@ -51,7 +52,15 @@ function enviar()
             emailCelda.classList.add('error')
             alert('los valores ingresados en el mail son incorrectos')
             camposValidados = false
-        }
+        } 
+
+    let tarjetaCreditoElemento = /^[A-Za-z\s]+$/ 
+    if(tarjetaCreditoElemento.test(tarjetaCelda.value)==false)
+    {
+        tarjetaCelda.classList.add('error') 
+        alert('Valores Incorrectos')
+        camposValidados = false
+    }    
      
 
         if(camposValidados == true)
