@@ -9,7 +9,7 @@ body{
 
 .grilla{
     width: 90%; 
-    height: 38rem;
+    height: 50rem;
     display: grid; 
     grid-template-columns: repeat(4, 1fr); 
     grid-template-rows: repeat(8, 1fr); 
@@ -66,17 +66,18 @@ nav a:hover{
 
 a{
     text-decoration: none;
-    color: #57dfb7;
+    color: white;
 } 
 
 h1{
-    color: #57dfb7;
+    color: #57dfb7;   
 } 
 
+
 table{ 
-    grid-column: 4/7;
+
     font-size: 0.7rem;
-    width: 27rem; 
+    width: 500px; 
     background-color: #191919;
     border: 2px solid white;
     border-radius: 5px;
@@ -118,9 +119,6 @@ td{
     background-color: #191919;
     margin-top: 0.5rem;
 } 
-
-
-
 
 .cont-footer{
     display: flex;
@@ -174,8 +172,7 @@ button{
 }
 
 .formularioCompra{ 
-    
-    
+
     background-color: #2e2d2d;
     border-radius: 10px;
     width: 18rem;
@@ -183,7 +180,6 @@ button{
     margin-left: 0.7rem;
     margin-top: 0.5rem; 
     text-align: center;
-    
 } 
 
 .contenedor-shows{ 
@@ -213,4 +209,15 @@ button{
     border: 2px solid red; 
     background-color: yellowgreen; 
 }
+
+
+.main-buy{
+    display: flex; 
+    justify-content: space-around;
+    grid-column: 1/6; 
+
+}  
+
+
+
 

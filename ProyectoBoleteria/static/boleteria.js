@@ -1,6 +1,6 @@
 let tickets = [] 
 
-
+  
 class Ticket{
     constructor(nombreApellido,email,show,ubicacion,medioDePago){ 
 0

@@ -12,11 +12,11 @@ def home2():
 
 @app.route('/comprar_tickets')   
 def comprar_tickets():
-    return render_template('buy2.html') 
+    return render_template('buy.html') 
 
 @app.route('/ver_ubicaciones') 
 def ver_ubicaciones(): 
-    return render_template('tickets2.html')  
+    return render_template('tickets.html')  
 
 if __name__ == "__main__":
     app.run(host='192.168.100.19', port=5000) # abrimos la cmd y colocamos ipconfig
